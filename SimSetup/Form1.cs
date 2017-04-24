@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Text.RegularExpressions;
 
 namespace SimSetup
 {
@@ -15,6 +16,49 @@ namespace SimSetup
         public Form1()
         {
             InitializeComponent();
+
+            lisStatus.View = View.List;
+            //lisStatus.Columns.Add("Status Window", 320, HorizontalAlignment.Left);
+
+
+            Status("Ready to begin.");
+
         }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            Status("Ready to begin.");
+        }
+        public struct Permissions
+        {
+
+        }
+
+        public static class Globals
+        {
+
+            public static string SimTitle;
+
+
+
+
+        }
+
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+
+
+
+        private void Status(string sStatusText)
+        {
+            lisStatus.Items.Add(sStatusText);
+        }
+
+
+
     }
 }
