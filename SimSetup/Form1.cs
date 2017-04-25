@@ -37,7 +37,28 @@ namespace SimSetup
         public static class Globals
         {
 
+
+            // General Settings - Administration
             public static string SimTitle;
+            public static string SimAuthors;
+            public static string Captain;
+            public static bool AutoRegister;
+
+
+            // General Settings - Interface
+            public static string InvColor;
+            public static string PresentColor;
+            public static string RegColor;
+
+
+            // General Settings - Commerce and Terms
+            public static string CurrencyName, CurrencyPlural;
+            public static string WeightName, WeightPlural;
+
+
+
+            // General Settings - Administration
+            public static bool FlagInventory, FlagCombat, FlagClasses, FlagDayNight, FlagFarming, FlagSurvival;
 
 
 
@@ -57,8 +78,6 @@ namespace SimSetup
         {
             lisStatus.Items.Add(sStatusText);
         }
-
-
 
     }
 }
